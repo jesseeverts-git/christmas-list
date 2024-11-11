@@ -65,7 +65,7 @@ export function ChristmasWishListComponent() {
             <GiftIcon className="text-red-400 w-8 h-8 transform rotate-15" />
           </div>
           <h1 className="text-3xl font-bold text-red-500 mb-2">
-            Jesse's Kerstlijst
+            Jesse&apos;s Kerstlijst
           </h1>
           <p className="text-sm text-green-300 mb-2">Here&apos;s what I&apos;m hoping for!</p>
           <div className="text-yellow-300 space-y-1">

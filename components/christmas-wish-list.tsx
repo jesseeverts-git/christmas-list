@@ -37,7 +37,7 @@ export function ChristmasWishListComponent() {
         try {
           await audioRef.current.play()
           setIsPlaying(true)
-        } catch (error) {
+        } catch {
           console.log('Autoplay was prevented. User needs to interact to play audio.')
         }
       }

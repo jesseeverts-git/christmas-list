@@ -18,8 +18,10 @@ export function ChristmasWishListComponent() {
 
   const wishList: WishListItem[] = [
     { id: 1, item: "Bekerhouder auto", price: 20, link: "https://www.amazon.com.be/-/nl/bekerhouder-TPE-organizer-middenconsole-trillingsbestendig-accessoires/dp/B0CS29QMZM/ref=sr_1_1?dib=eyJ2IjoiMSJ9.AYM_o2F2nVGLGsIScC8eXMmfvLQ8QhjvtKsTys4Kd_aBm_9qWFYuaKLK-rYY-q85BjQ0WnbFtJVjHQXjdq-wu5qfyiqfvHvwzmsF0PS8Y83qYByAL2k37Hvep4RS6BCb0MVGpHlrwo4NTnEj2AHY_0-XtQCSXRAhSpQ4AO_mPP3aa-1DFObpZ5iUjhmDlmTjl1S17rOh1WY3WZEZGlFDeCii8vmvHeEa68zoyiA-Gp_cxALxQ3N7czFawvI2MgTxc8tZxtlL6-gedBtJc_Hb771TMLUWI1Q4GCfK85hmPEY.uOzKeOdWZPHC6i3goAd4cNDstM9h2qtUI55PnmmK-5A&dib_tag=se&keywords=bmw%2Bix1%2Bcup%2Bholder&qid=1731325916&sr=8-1&th=1" },
-    { id: 2, item: "Croqs (gelijk papa de zijne)", price: "Prijs naar keuze", link: "" },
-    { id: 3, item: "Lotto dingetjes", price: "Prijs naar keuze", link: "" },
+    { id: 2, item: "Capo voor de gitaar", price: "Kies zelf maar :)", link: "" },
+    { id: 3, item: "Band voor de gitaar", price: "Kies zelf maar :)", link: "" },
+    { id: 4, item: "Crocs (gelijk papa de zijne)", price: "Kies zelf maar :)", link: "" },
+    { id: 5, item: "Lotto dingetjes", price: "Kies zelf maar :)", link: "" },
   ]
 
   // Calculate total of items with fixed prices
@@ -100,12 +102,14 @@ export function ChristmasWishListComponent() {
                       : item.price}
                   </span>
                 </div>
-                <Button
-                  onClick={() => window.open(item.link, '_blank')}
-                  className="w-full bg-red-500 hover:bg-red-600 text-white text-sm py-1"
-                >
-                  Buy Now
-                </Button>
+                {item.link && (
+                  <Button
+                    onClick={() => window.open(item.link, '_blank')}
+                    className="w-full bg-red-500 hover:bg-red-600 text-white text-sm py-1"
+                  >
+                    Link to buy
+                  </Button>
+                )}
               </li>
             ))}
           </ul>

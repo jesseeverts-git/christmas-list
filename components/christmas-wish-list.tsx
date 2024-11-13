@@ -117,7 +117,7 @@ export function ChristmasWishListComponent() {
       </div>
 
       <audio ref={audioRef} loop>
-        <source src="/wauw.wav" type="audio/wav" />
+        <source src="/wauw.mp3" type="audio/mpeg" />
         Your browser does not support the audio element.
       </audio>
     </div>
